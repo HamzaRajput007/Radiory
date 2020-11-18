@@ -47,6 +47,7 @@ public class Radios extends AppCompatActivity implements RadioAdapter.RadioClick
     ImageView navigationDrawerToggleIv, searchIcon;
     int countryId;
     LottieAnimationView preLoadAnimationView;
+    int counterVar = 1 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +62,7 @@ public class Radios extends AppCompatActivity implements RadioAdapter.RadioClick
         countryName = findViewById(R.id.textViewRadioCountryID);
         radiosRecyclerView.setHasFixedSize(true);
         radiosRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        Toast.makeText(this, "Count = " + String.valueOf(counterVar), Toast.LENGTH_SHORT).show();
         radiosList = new ArrayList<>();
 
         final Dialog dialog = new Dialog("Loading Radios");
@@ -210,7 +211,4 @@ public class Radios extends AppCompatActivity implements RadioAdapter.RadioClick
             }
         });
     }
-
-    // This comment used to test the version control system
-
 }
