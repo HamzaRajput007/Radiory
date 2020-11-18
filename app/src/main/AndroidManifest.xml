@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="apps.webscare.radiory">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/grey_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/grey_logo"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Player"
+            android:theme="@style/LoginTheme"></activity>
+        <activity android:name=".Activities.AboutUs"
+            android:theme="@style/LoginTheme"/>
+        <activity
+            android:name=".Activities.Radios"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".Activities.HOme"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.Login"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".Activities.Splash"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

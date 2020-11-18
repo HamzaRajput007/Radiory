@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+   <!-- <item android:title="Categories"
+        android:icon="@drawable/categories_white"
+        android:id="@+id/categoriestMenuItemID" />
+-->
+    <item android:title="Home"
+        android:id="@+id/countriesMenuItemId"
+        android:icon="@drawable/countries_white"/>
+
+    <item android:title="Radios"
+        android:icon="@drawable/radio_white"
+        android:id="@+id/radiosMenuItemId"/>
+
+    <item android:title="About Us"
+        android:icon="@drawable/about_us_white"
+        android:id="@+id/aboutUsMenuItemId"/>
+
+</menu>
