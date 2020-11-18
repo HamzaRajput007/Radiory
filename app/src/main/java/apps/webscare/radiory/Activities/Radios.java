@@ -62,7 +62,7 @@ public class Radios extends AppCompatActivity implements RadioAdapter.RadioClick
         countryName = findViewById(R.id.textViewRadioCountryID);
         radiosRecyclerView.setHasFixedSize(true);
         radiosRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        Toast.makeText(this, "Count = " + String.valueOf(counterVar), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Count = " + String.valueOf(counterVar++), Toast.LENGTH_SHORT).show();
         radiosList = new ArrayList<>();
 
         final Dialog dialog = new Dialog("Loading Radios");
